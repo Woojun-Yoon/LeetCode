@@ -3,10 +3,10 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    let dict = {};
+    let dic = {};
     for (let num of nums) {
-        dict[num] = dict[num] + 1 || 1;
-        if (dict[num] > nums.length / 2) {
+        dic[num] = dic[num] + 1 || 1;
+        if (dic[num] > nums.length / 2) {
             return (num); 
         }
     }
